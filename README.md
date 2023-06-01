@@ -11,3 +11,5 @@ Environment variables you need to take care of:
 * _SEQ_API_KEY_ - if authentication is enabled, this will be required access API key. Remember to assign it correct permissions!
 * _BIND_ADDRESS_ - interface to bind the Prometheus metric server. Default is _0.0.0.0_
 * _BIND_PORT_ - port number to bind. Default is _80_
+
+**Please note that you will have to change either _SEQ_ADDRESS_ or _BIND_PORT_ since the program will happily try to read it's own Prometheus output.**
